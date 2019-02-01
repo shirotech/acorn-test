@@ -1,0 +1,48 @@
+module.exports = {
+  env: {
+    node: true,
+    browser: true,
+    builtin: true,
+    es6: true,
+    jasmine: true,
+  },
+  plugins: ['react'],
+  parserOptions: {
+    ecmaVersion: 8,
+    sourceType: 'module',
+    ecmaFeatures: {jsx: true},
+  },
+  rules: {
+    'curly': [2, 'all'],
+    'template-curly-spacing': [2, 'never'],
+    'no-console': 0,
+    'require-jsdoc': 0,
+    'max-len': 0,
+    'camelcase': 0,
+    'one-var': 0,
+    'prefer-arrow-callback': 2,
+    'prefer-const': 2,
+    'prefer-template': 2,
+    'quote-props': [2, 'consistent-as-needed'],
+    'indent': [2, 2, {SwitchCase: 1}],
+    'react/jsx-closing-bracket-location': 2,
+    'react/jsx-curly-spacing': 2,
+    'react/jsx-equals-spacing': 2,
+    'react/jsx-indent-props': [2, 2],
+    'react/jsx-first-prop-new-line': [2, 'multiline'],
+    'react/jsx-max-props-per-line': [2, {maximum: 3}],
+    'react/jsx-no-bind': 2,
+    'react/jsx-no-duplicate-props': 2,
+    'react/jsx-sort-props': [2, {shorthandLast: true, reservedFirst: true}],
+    'react/jsx-tag-spacing': [2, {beforeSelfClosing: 'never'}],
+    'react/jsx-uses-vars': 2,
+    'react/jsx-wrap-multilines': 2,
+  },
+  extends: ['eslint:recommended', 'google'],
+  settings: {
+    react: {
+      pragma: '_h',
+      version: '999.999.999',
+    }
+  },
+};
